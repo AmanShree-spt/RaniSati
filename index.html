@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200;300&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@300&family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSH: Ranisati Ply & Hardware</title>
+    <style>
+        /* CSS Styling */
+        body {
+          font-family: 'Open Sans', sans-serif;
+          font-family: 'Poppins', sans-serif;
+          margin: 0;
+          background-color: rgba(117, 47, 0);
+        }
+      .navbar {
+        background-color: rgba(117, 47, 0, 0.801);
+        /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+        color: #eeededec;
+        margin: 0;
+        /* padding: 20px 0; */
+        align-items: center;
+        position: sticky;
+        top: 0;
+      }
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .navbar-brand {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .logo img {
+        mix-blend-mode: multiply;
+        height: 5rem;
+        margin: 0 0 0 1rem;
+        padding: 0;
+      }
+
+      .navbar-menu {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 50%;
+        margin: 0 1rem 0 0;
+        font-size: 1.1rem;
+        font-family: 'Montserrat', sans-serif;
+        /* font-weight: bold; */
+
+        /* padding: 0; */
+      }
+
+      .navbar-link {
+        /* margin-left: 20px; */
+        color: #c3fae8;
+        text-decoration: none;
+        position: relative;
+        border-radius: 3rem;
+        border-style: hidden;
+        padding: 0.5rem 1.02rem 0.5rem 1.02rem;
+      }
+
+      .navbar-link:hover {
+        /* position: relative; */
+        color: yellowgreen;
+        /* border-style: solid; */
+        text-decoration: underline;
+        font-weight: bold;
+        /* border-color: #e3e3e3; */
+        /* border-radius: 3rem; */
+        /* background-color: #e3e3e3; */
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        transition-duration: 200ms;
+        
+      }
+
+      .portfolio-dropdown {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+        /* padding: 10px; */
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        display: none;
+      }
+
+      .navbar-link:hover .portfolio-dropdown {
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .portfolio-dropdown ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 3rem 5rem 3rem 5rem;
+      }
+
+      .portfolio-dropdown li {
+        /* margin-right: 10px; */
+        padding: 0 1.3rem 0 1.3rem;
+      }
+
+      .portfolio-dropdown img {
+        width: 24px;
+        height: 24px;
+        margin-right: 5px;
+      }
+      
+      .home_image img {
+        width: 100%;
+        margin-top: -6rem;
+      }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+        <a href="#" class="logo"><img src="./Ranisati_cropped-removebg-preview.png"></a>
+        </div>
+        <ul class="navbar-menu">
+        <li><a href="#" class="navbar-link">HOME</a></li>
+        
+        <li class="navbar-link portfolio-link" style="border: 0; margin: 0; padding: 0">
+            <a href="#" class="navbar-link">PORTFOLIO</a>
+            <div class="portfolio-dropdown">
+              <ul>
+                <li><img src="home.png" alt="Home"><a href="#">Home</a></li>
+                <li><img src="office.png" alt="Office"><a href="#">Office</a></li>
+                <li><img src="hotel.png" alt="Hotel"><a href="#">Hotel</a></li>
+                <li><img src="restaurant.png" alt="Restaurant"><a href="#">Restaurant</a></li>
+                <li><img src="showroom.png" alt="Showroom"><a href="#">Showroom</a></li>
+              </ul>
+            </div>
+        </li>
+        <li><a href="#" class="navbar-link">SERVICES</a></li>
+        <li><a href="#" class="navbar-link">ABOUT US</a></li>
+        <li><a href="#" class="navbar-link">CONTACT US</a></li>
+        </ul>
+    </div>
+    </nav>
+    <div class="home_image">
+      <img src="./home_img.jpeg"> 
+    </div>
+    
+
+    <div class="footer">
+      <div class="footer_left">
+
+      </div>
+      <div class="footer_sociallinks">
+
+      </div>
+    </div>
+
+</body>
+</html>
